@@ -1,6 +1,6 @@
 {
   "name": "mock-realtime",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "mock real time data as JSON",
   "main": "index.js",
   "scripts": {},
@@ -8,7 +8,8 @@
     "node": ">=4"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "lib/"
   ],
   "repository": {
     "type": "git",
