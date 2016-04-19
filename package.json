@@ -9,7 +9,9 @@
   },
   "files": [
     "index.js",
-    "lib/"
+    "lib/days.js",
+    "lib/seeds.js",
+    "lib/util.js",
   ],
   "repository": {
     "type": "git",
