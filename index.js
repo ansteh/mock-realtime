@@ -50,7 +50,7 @@ const genIncrementer = _.curry(function(key, schema, date){
 
 const Day = genIncrementer('days');
 
-let now = Day({
+/*let now = Day({
   hours: { min: 10, max: 13},
   minutes: { min: 0, max: 59},
   seconds: { min: 0, max: 59},
@@ -59,6 +59,6 @@ let now = Day({
 
 console.log(now.get().toString());
 console.log(now.next().toString());
-console.log(now.next().toString());
+console.log(now.next().toString());*/
 
 module.exports = Day;
