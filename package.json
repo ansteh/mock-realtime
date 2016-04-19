@@ -11,7 +11,7 @@
     "index.js",
     "lib/days.js",
     "lib/seeds.js",
-    "lib/util.js",
+    "lib/util.js"
   ],
   "repository": {
     "type": "git",
