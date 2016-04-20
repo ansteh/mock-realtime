@@ -6,8 +6,6 @@ const _      = require('lodash');
 const util   = require('./lib/util.js');
 const seeds = require('./lib/seeds.js');
 
-//console.log(seeds.days.max().toString());
-
 const range = function(min, max){
   let engine = Random.engines.mt19937().autoSeed();
   let distribution = Random.integer(min, max);
@@ -48,9 +46,22 @@ const genIncrementer = _.curry(function(key, schema, date){
   };
 });
 
-const Day = genIncrementer('days');
+_.forOwn(seeds, function(options, seedName){
+  let name = _.chain(seedName)
+    .capitalize()
+    .trimEnd('s')
+    .value();
 
-/*let now = Day({
+    exports[name] = genIncrementer(seedName);
+});
+
+//console.log(seeds.days.max().toString());
+//console.log(_.chain('days').capitalize().trimEnd('s').value());
+//const Day = genIncrementer('days');
+//module.exports = Day;
+
+/*let Day = exports.Day;
+let now = Day({
   hours: { min: 10, max: 13},
   minutes: { min: 0, max: 59},
   seconds: { min: 0, max: 59},
@@ -60,5 +71,4 @@ const Day = genIncrementer('days');
 console.log(now.get().toString());
 console.log(now.next().toString());
 console.log(now.next().toString());*/
-
-module.exports = Day;
+//console.log(exports);
