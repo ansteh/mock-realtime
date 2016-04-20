@@ -1,6 +1,6 @@
 {
   "name": "mock-realtime",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "mock real time data as JSON",
   "main": "index.js",
   "scripts": {},

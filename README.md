@@ -4,7 +4,7 @@ mock real time data as JSON
 # preview
 ```js
 'use strict';
-const Day = require('mock-realtime');
+const Day = require('mock-realtime').Day;
 
 let now = Day({
   hours: { min: 10, max: 13},
