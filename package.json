@@ -1,6 +1,6 @@
 {
   "name": "mock-realtime",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "mock real time data as JSON",
   "main": "index.js",
   "scripts": {},
@@ -11,7 +11,8 @@
     "index.js",
     "lib/days.js",
     "lib/seeds.js",
-    "lib/util.js"
+    "lib/util.js",
+    "lib/number.js"
   ],
   "repository": {
     "type": "git",
