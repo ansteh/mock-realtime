@@ -1,7 +1,7 @@
 # mock-realtime
 mock real time data as JSON
 
-# preview
+## preview
 ```js
 'use strict';
 const realtime = require('mock-realtime');
@@ -19,7 +19,7 @@ console.log(now.next().toString());
 console.log(now.next().toString());
 ```
 
-# range integer biased by weekday
+## range integer biased by weekday
 ```js
 let biasedIntegerGenerator = exports.rangeIntegerBiasedByWeekdays(0, 20, {
   0: { min: 0, max: 0 }, //sunday
