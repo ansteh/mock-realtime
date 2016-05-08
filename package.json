@@ -1,6 +1,6 @@
 {
   "name": "mock-realtime",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "mock real time data as JSON",
   "main": "index.js",
   "scripts": {},
@@ -33,7 +33,7 @@
     "url": "https://github.com/ansteh/mock-realtime/issues"
   },
   "dependencies": {
-    "lodash": "^4.11.1",
+    "lodash": "^4.12.0",
     "moment": "^2.13.0",
     "random-js": "^1.0.8"
   },
